@@ -1,3 +1,17 @@
+
+/* fixed colors*/
+:root {
+    --mainDark: #141D2F;
+    --mainOrange: #E86F00;
+    --mainRed: #FF4747;
+}
+
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/poppins-v20-latin-regular.ttf);
+}
+
 body {
     margin: 0;
 }

@@ -1,0 +1,135 @@
+.background-color {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--mainDark);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins';
+
+    h1 {
+        color: white;
+        font-size: 98px;
+        font-weight: 800;
+        margin: 0;
+    }
+
+    h2 {
+        color: white;
+        font-size: 86px;
+        font-weight: 400;
+        rotate: -90deg;
+        margin-left: 0;
+    }
+
+    h3 {
+        color: var(--mainRed);
+        font-size: 64px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+.headline-container {
+    display: flex;
+    position: absolute;
+    transform: translate(-3%, 0);
+}
+
+.sub-headline-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-img-1 {
+    position: absolute;
+    top: 100px;
+    left: -250px;
+}
+
+.bg-img-2 {
+    position: absolute;
+    top: 0px;
+    right: -450px;
+}
+
+button {
+    background-color: var(--mainOrange);
+    width: 165px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 200px;
+    color: white;
+    font-weight: 400;
+    font-size: 23px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px, 30px, 15px, 30px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--mainRed);
+        bottom: 190px;
+        transform: scale(1.2);
+    }
+}
+
+.scroll-down-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 130px;
+    right: 20px;
+    rotate: 90deg;
+    gap: 10px;
+
+    img {
+        rotate: -90deg;
+        height: 19px;
+    }
+}
+
+.scroll-down {
+    font-size: 23px;
+    font-weight: 100;
+    color: white;
+}
+
+.social-media-container {
+    display: flex;
+    position: absolute;
+    bottom: 130px;
+    left: 0px;
+    align-items: center;
+}
+
+.social-media-container-img {
+    position: absolute;
+    display: flex;
+    left: 113px;
+    box-sizing: border-box;
+    img {
+        margin-left: 32px;
+        cursor: pointer;
+        width: 32px;
+        object-fit: cover;
+        transition: all 200ms;
+
+        &:hover {
+            margin-left: 36px;
+            transform: scale(1.4);
+        }
+    }
+}
+
+
+.orange-border {
+    width: 100px;
+    height: 0;
+    border: 2px solid var(--mainOrange);
+}

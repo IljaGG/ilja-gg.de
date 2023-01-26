@@ -1,0 +1,60 @@
+.about-me-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: var(--mainDark);
+}
+
+.about-me-section-container {
+    display: flex;
+}
+
+.about-me-section {
+    font-family: 'poppins';
+    color: white;
+    max-width: 500px;
+    margin-left: 80px;
+    h1 {
+        font-size: 90px;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.about-me-sub-container {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 50px;
+        transition: all 200ms;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+.about-me-img-container {
+    width: 360px;
+    margin-left: 27px;
+}
+
+.portrait-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.portrait {
+    position: absolute;
+    left: 160px;
+    bottom: 150px;
+}
+
+.bg-element-container {
+    position: absolute;
+    width: 100%;
+    bottom: -512px;
+    overflow: hidden;
+    pointer-events: none; 
+    background-image: url("../../assets/img/bg-element.png");
+}

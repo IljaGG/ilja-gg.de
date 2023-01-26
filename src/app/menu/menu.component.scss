@@ -1,0 +1,37 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    padding: 8px 0px;
+    justify-content: space-between;
+    background-color: var(--mainDark);
+    font-family: 'Poppins';
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+        margin-left: 32px;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            color: var(--mainOrange);
+        }
+    }
+}
+
+.link-container {
+    margin-right: 80px;
+}
+
+p {
+    font-size: 38px;
+    color: white;
+    margin-left: 80px;
+}

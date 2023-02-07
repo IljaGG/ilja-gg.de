@@ -10,6 +10,15 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+    const projects = Array.from(document.querySelectorAll('.project'));
+    const imageUrl = '../../assets/img/shadow.png';
 
+    for (let project of projects) {
+      const img = document.createElement('img');
+      img.src = imageUrl;
+      img.style.position = 'absolute';
+      img.style.bottom = '0';
+      project.appendChild(img);
+    }
+  }
 }

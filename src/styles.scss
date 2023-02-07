@@ -1,17 +1,265 @@
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/poppins-v20-latin-100.woff);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/poppins-v20-latin-regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(assets/fonts/poppins-v20-latin-700.woff);
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 /* fixed colors*/
 :root {
     --mainDark: #141D2F;
+    --mainDarkTransparent: #141d2fe6;
     --mainOrange: #E86F00;
+    --mainLightOrange: #FA7902;
     --mainRed: #FF4747;
+    --mainPurple: #D61CE6;
+    --mainWhite: white;
+
+    --fs-xxxl: 7.5rem;
+    --fs-headline: 5.625rem;
+    --fs-xl: 4.3125rem;
+    --fs-large: 4rem;
+    --fs-secondary-headline: 2rem;
+    --fs-nav: 1.438rem;
+    --fs-text: 1rem;
+    --fs-small: 0.85rem;
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fw-small: 100;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --size-big: 5rem;
+}
+
+// https://piccalil.li/blog/a-modern-css-reset
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* fixed classes */
+
+.background-color {
+    background-color: var(--mainDark);
+}
+
+.fw-small {
+    font-weight: var(--fw-small);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+    font-weight: var(--fw-bold);
 }
 
 
-@font-face {
-    font-family: Poppins;
-    src: url(assets/fonts/poppins-v20-latin-regular.ttf);
+.fs-extra-large {
+    font-size: var(--fs-xxxl);
 }
+
+.fs-primary-heading {
+    font-size: var(--fs-headline);
+    line-height: 1.2;
+}
+
+.fs-large {
+    font-size: var(--fs-xl);
+}
+
+.fs-headline {
+    font-size: var(--fs-large);
+    line-height: 1.2;
+}
+
+.fs-secondary-headline {
+    font-size: var(--fs-secondary-headline);
+    line-height: 1.2;
+}
+
+.fs-extra-small {
+    font-size: var(--fs-small);
+}
+
+.fs-nav {
+    font-size: var(--fs-nav);
+}
+
+.fs-regular-text {
+    font-size: var(--fs-text);
+}
+
+.padding-block-big {
+    padding-block: var(--size-big);
+}
+
+section {
+    --padding: 80px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100vh;
+    margin-bottom: var(--padding);
+}
+
+.container {
+    --max-width: 1280px;
+    --padding: 5rem;
+    position: relative;
+    width: min(var(--max-width), 100% - (var(--padding) * 2));
+    margin-inline: auto;
+
+}
+
+@media (max-width: 860px) {
+    .container {
+        --padding: 1.56rem;
+    }
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 860px) {
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
+}
+
+/* general styling*/
 
 body {
-    margin: 0;
+    background-color: var(--mainDark);
+    font-family: 'Poppins', sans-serif;
+    color: var(--mainWhite);
+}
+
+/* button */
+
+.button {
+    background-color: var(--mainOrange);
+    color: var(--mainWhite);
+    font-size: var(--fs-nav);
+    line-height: 1.2;
+    border: 0;
+    border-radius: 10px;
+    padding: .75em 1.5em;
+    box-shadow: 4px 5px 9px -3px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 300ms;
+
+    &:hover {
+        background-color: var(--mainRed);
+        transform: scale(1.1);
+    }
+}
+
+/* social media */
+
+.social-media-container-img {
+    display: flex;
+    box-sizing: border-box;
+
+    img {
+        margin-left: 32px;
+        cursor: pointer;
+        width: 32px;
+        object-fit: cover;
+        transition: all 200ms;
+
+        &:hover {
+            margin-left: 36px;
+            transform: scale(1.4);
+        }
+    }
 }

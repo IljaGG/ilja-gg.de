@@ -1,33 +1,46 @@
-.skills-wrapper {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--mainDark);
+
+
+.skill-icons-container {
+    display: flex;
+    flex-direction: column;
 }
 
-.skills-content-container {
-    color: white;
+.icons-container-row {
+    display: flex;
+}
 
-    
-    button {
-        button {
-            background-color: var(--mainOrange);
-            width: 165px;
-            height: 58px;
-            border: none;
-            border-radius: 10px;
-            color: white;
-            font-weight: 400;
-            font-size: 23px;
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-            padding: 15px, 30px, 15px, 30px;
-            transition: 100ms ease-in-out;
-            cursor: pointer;
-        
-            &:hover {
-                background-color: var(--mainRed);
-                bottom: 190px;
-                transform: scale(1.2);
-            }
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 110px;
+    margin-bottom: 110px;
+
+    img {
+        min-width: 60px;
+        object-fit: cover;
+
+        &:hover {
+            animation: bounce 800ms ease-in-out;
         }
+    }
+
+    span {
+        font-size: var(--text-size);
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    80% {
+        transform: translateY(-15px);
     }
 }

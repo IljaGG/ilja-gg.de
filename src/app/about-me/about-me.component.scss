@@ -12,26 +12,28 @@
     justify-content: center;
     align-items: center;
     margin: 0 20px;
-    width: 180px;
-    height: 100px;
+    min-width: 80px;
+    min-height: 80px;
 }
 
 .about-me-content {
-   
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
 }
 
 .portrait-container {
     display: flex;
+    max-width: 40vw;
     justify-content: center;
     position: relative;
     overflow: visible;
-
 }
 
 .portrait {
     position: absolute;
-    top: -28px;
-    max-width: 500px;
+    top: 0px;
+    max-width: 400px;
     object-fit: cover;
 }
 
@@ -41,9 +43,11 @@
 
 .bg-bow {
     position: absolute;
-    top: 475px;
-    left: -80px;
-    min-width: 100vw;
+    top: 341px;
+    left: -786px;
+    min-width: 120vw;
+    object-fit: cover;
+    object-position: top right;
 }
 
 

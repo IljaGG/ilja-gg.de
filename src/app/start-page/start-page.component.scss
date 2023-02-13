@@ -21,45 +21,56 @@
 
 .primary-text-btn-container {
     display: flex;
-    isolation: isolate;
     flex-direction: column;
     align-items: center;
-}
-
-.headline-start {
-    display: flex;
-    h2 {
-        writing-mode: vertical-lr;
-        transform: rotate(180deg);
-    }
+    margin-top: 172px;
+    margin-bottom: 172px;
 }
 
 .i-am-container {
+    display: flex;
+    justify-content: center;
     height: fit-content;
+    font-size: 86px;
+    font-weight: var(--fw-regular);
     transform: rotate(180deg);
-    h2 {
+    margin-bottom: 10px;
+    span {
+        letter-spacing: -5px;
         writing-mode: vertical-lr;
     }
 }
 
 .sub-headline-container {
-    h3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 101px;
+    margin-right: 20px;
+    .main-headline {
+        font-size: 98px;
+        font-weight: var(--fw-bold);
+    }
+    .sec-headline {
+        font-size: 64px;
+        font-weight: var(--fw-regular);
         color: var(--mainRed);
     }
 }
 
 .scroll-down-container {
     display: flex;
+    justify-content: center;
     align-items: baseline;
     position: absolute;
-    right: -66px;
-    bottom: -201px;
+    font-size: 23px;
+    right: 0;
+    bottom: 10px;
     transform: rotate(90deg);
     span {
         font-size: var(--fs-nav);
     }
     img {
-        margin-left: 8px;
+        margin-left: 18px;
         transform: rotate(-90deg); 
         height: 16px;
         width: 16px;
@@ -68,21 +79,28 @@
 }
 
 
-.social-media-container-img {
+.social-media-container {
     display: flex;
     position: absolute;
-    left: -80px;
-    bottom: -202px;
-
+    left: -10vw;
+    bottom: 0px;
+    
     img {
+        width: 35px;
+        object-fit: cover;
+        transition: 300ms;
         margin-left: 42px;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
     
 
-    &.social-media-container-img::before {
+    &.social-media-container::before {
         display: block;
         content: '';
-        width: 80px;
+        width: 180px;
         height: 5px;
         background-color: var(--mainOrange);
         align-self: center;

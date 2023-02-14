@@ -65,6 +65,7 @@
 .shadow {
     position: absolute;
     bottom: 0;
+    z-index: -1;
 }
 
 .project-info {
@@ -113,9 +114,38 @@
 
 .project-buttons {
     display: flex;
-    max-width: 600px;
+    width: 100%;
     justify-content: space-around;
+}
 
+.github-btn {
+    border: 1px solid var(--mainOrange);
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 23px;
+    font-weight: var(--fw-regular);
+    color: var(--mainWhite);
+    background-color: transparent;
+    transition: 300ms;
+
+    &:hover {
+        background-color: var(--mainPurple);
+    }
+}
+
+.live-test-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 23px;
+    font-weight: var(--fw-regular);
+    color: var(--mainWhite);
+    background-color: var(--mainRed);
+    transition: 300ms;
+
+    &:hover {
+        background-color: var(--mainOrange);
+    }
 }
 
 .purple-shadow-2 {

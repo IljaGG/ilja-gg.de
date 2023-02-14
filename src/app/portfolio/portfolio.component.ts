@@ -18,6 +18,7 @@ export class PortfolioComponent implements OnInit {
       img.src = imageUrl;
       img.style.position = 'absolute';
       img.style.bottom = '0';
+      img.style.zIndex = '-1';
       project.appendChild(img);
     }
   }

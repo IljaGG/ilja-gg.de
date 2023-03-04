@@ -45,7 +45,7 @@
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
     scroll-behavior: smooth;
 }
 
@@ -59,6 +59,7 @@ body {
 a {
     text-decoration: none;
 }
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
@@ -84,54 +85,83 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-    background-color: var(--mainDark);
+    background-color: #101828;
     color: var(--mainWhite);
+    scroll-behavior: smooth;
 }
 
 h1 {
-    display:inline;
+    display: inline;
     font-size: clamp(45px, 10vw, 90px);
     font-weight: var(--fw-bold);
     margin: 26px 0;
     line-height: 75px;
+    white-space: nowrap;
+}
+
+a {
+    z-index: 3;
 }
 
 p {
     margin: 26px 0;
+    letter-spacing: 1px;
 }
 
 ul {
-    list-style-type: none; 
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 section {
     display: flex;
     position: relative;
-    width: 100vw;
+    max-width: 1440px;
     justify-content: center;
     align-items: center;
+    background-color: var(--mainDark);
+    overflow-x: clip;
+}
+
+.padding-block-big {
+    padding-block: 140px;
+}
+
+.padding-top {
+    padding-top: 140px;
+}
+
+
+.padding-bottom {
+    padding-bottom: 120px;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    min-width: 90%;
-    max-width: 1200px;
-    margin: 120px 0;
+    width: 90%;
+    margin-inline: auto;
 }
 
 .even-columns {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     gap: 40px;
-    flex-wrap: wrap;
+}
+
+@media(max-width: 900px) {
+    .even-columns {
+        flex-direction: column-reverse;
+        gap: 5em;
+    }
 }
 
 .main-button {
@@ -147,6 +177,12 @@ section {
     &:hover {
         transform: scale(1.1);
         background-color: var(--mainRed);
+    }
+}
+
+@media (max-width:900px) {
+    .main-button {
+        font-size: 16px;
     }
 }
 

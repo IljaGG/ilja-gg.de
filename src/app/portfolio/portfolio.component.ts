@@ -17,7 +17,8 @@ export class PortfolioComponent implements OnInit {
       const img = document.createElement('img');
       img.src = imageUrl;
       img.style.position = 'absolute';
-      img.style.bottom = '0';
+      img.style.width = '100%';
+      img.style.bottom = '-16px';
       img.style.zIndex = '-1';
       project.appendChild(img);
     }

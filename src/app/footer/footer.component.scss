@@ -1,8 +1,14 @@
 footer {
     display: flex;
+    position: relative;
+    max-width: 1440px;
     justify-content: center;
     align-items: center;
+    background-color: var(--mainDark);
+    overflow: hidden;
     border-top: 3px solid var(--mainOrange);
+    padding-top: 80px;
+    padding-bottom: 56px;
 }
 
 a {
@@ -36,11 +42,43 @@ a {
         width: 35px;
         object-fit: cover;
         transition: 300ms;
-        margin-left: 42px;
+        margin-left: 21px;
+        margin-right: 21px;
         cursor: pointer;
         &:hover {
             transform: scale(1.2);
         }
     }
+}
+
+.main-footer-content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 750px){
+    footer {
+        padding-block: 40px;
+    }
+
+    .main-footer-content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .imprint-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
+
+.flex-direction-column {
+    flex-direction: column !important;
+}
+
+.no-gap {
+    gap: unset !important;
 }
 

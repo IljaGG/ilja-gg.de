@@ -1,6 +1,7 @@
 .img-p-container {
     display: flex;
     align-items: center;
+
     img {
         height: 60px;
         object-fit: cover;
@@ -15,45 +16,138 @@
     min-width: 80px;
     min-height: 80px;
     transition: 300ms;
-    
+
     &:hover {
-            transform: scale(1.2);
-        }
+        transform: scale(1.2);
+    }
 }
 
 .about-me-content {
     display: flex;
     flex-direction: column;
-    max-width: 40vw;
+    max-width: 50%;
+    z-index: 2;
+}
+
+@media(max-width: 900px) {
+    .about-me-content {
+        max-width: 100%;
+        position: relative;
+        top: -98px;
+    }
 }
 
 .portrait-container {
     display: flex;
-    max-width: 40vw;
     justify-content: center;
-    position: relative;
-    overflow: visible;
+    align-items: center;
+    max-width: 50%;
+    z-index: 1;
+}
+
+@media(max-width:900px) {
+    .portrait-container {
+        max-width: 100%;
+    }
 }
 
 .portrait {
-    position: absolute;
-    top: 0px;
-    max-width: 400px;
-    object-fit: cover;
+    width: 100%;
+    max-width: 465px;
+    z-index: 2;
 }
 
 .portrait-bg {
-    max-width: 700px;
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    max-width: 900px;
+    z-index: 1;
+}
+
+@media(max-width: 900px) {
+    .portrait-bg {
+        position: absolute;
+        width: unset;
+        top: 200px;
+        top: 71px;
+    }
+}
+
+.bg-bow-container {
+    position: absolute;
+    top: 62%;
+    z-index: 1;
 }
 
 .bg-bow {
-    position: absolute;
-    top: 341px;
-    left: -786px;
-    min-width: 120vw;
-    object-fit: cover;
-    object-position: top right;
-    pointer-events: none
+    position: relative;
+    pointer-events: none;
+    min-width: 101vw;
 }
 
+@media(max-width: 1200px) {
+    .bg-bow-container {
+        top: 66%;
+    }
+}
 
+@media(max-width: 1100px) {
+    .bg-bow-container {
+        top: 62%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .bg-bow-container {
+        top: 56%;
+    }
+}
+
+@media(max-width: 900px) {
+    .bg-bow-container {
+        top: 37%;
+    }
+}
+
+@media(max-width: 700px) {
+    .bg-bow-container {
+        top: 38%;
+    }
+}
+
+@media(max-width: 500px) {
+    .bg-bow-container {
+        top: 36%;
+    }
+}
+
+@media(max-width: 440px) {
+    .bg-bow-container {
+        top: 27%;
+    }
+}
+
+@media(max-width: 430px) {
+    .bg-bow-container {
+        top: 26%;
+    }
+}
+
+@media(max-width: 380px) {
+    .bg-bow-container {
+        top: 23%;
+    }
+}
+
+@media(max-width: 360px) {
+    .bg-bow-container {
+        top: 21%;
+    }
+}
+
+@media(max-width: 320px) {
+    .bg-bow-container {
+        top: 18%;
+    }
+}

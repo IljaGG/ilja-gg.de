@@ -1,25 +1,48 @@
-<section class="overflow-hidden">
+<section class="overflow-hidden padding-bottom">
     <div class="container">
         <img class="red-shadow-2" src="../../assets/img/red-shadow-2.png" alt="">
         <div class="contact-h1-wrapper">
             <h1>Contact</h1>
+            <div class="orange-line-container">
+                <div class="orange-line"></div>
+            </div>
         </div>
-        <div class="even-columns">
+        <div class="even-columns flex-column">
             <div class="contact-content">
                 <div class="contact-h2-wrapper">
+                    <div class="purple-line-container">
+                        <div class="purple-line"></div>
+                    </div>
                     <h2>Got a problem to solve?</h2>
+                </div>    
+                    <p>Have I piqued your interest? Contact me trough this form, I am interested in hearing
+                        you, knowing your ideas and contributing to your projects
+                        with my work.
+                    </p>
+                    <p>Need a Frontend Developer? <span class="contact-me">Contact me!</span></p>
+            </div>
+            <form action="https://ilja-gg.de/send_mail/send_mail.php" method="post">
+                <div class="contact-input">
+                    <input type="text" placeholder="Your name" name="name" required>
+                    <input type="email" placeholder="Your email" name="email" required>
+                    <textarea placeholder="Your message ..." name="message" required></textarea>
+                    <button class="main-button">Send message :)</button>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-                    Architecto, autem incidunt!
-                </p>
-                <p>Need a Frontend Developer? Contact me!</p>
-            </div>
-            <div class="contact-input">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Your email">
-                <textarea placeholder="Your message ..."></textarea>
-                <button class="main-button">Send message :)</button>
-            </div>
+            </form>
+        </div>
+        <div class="up-button">
+            <a href="#">
+                <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow" d="M18 15.828L13.343 20.485C12.9525 20.8755 12.3194 20.8755 
+                    11.929 20.485C11.5385 20.0945 11.5385 19.4615 11.929 19.071L18.2928 
+                    12.7071C18.6834 12.3166 19.3165 12.3166 19.7071 12.7071L26.071 19.071C26.4614 
+                    19.4615 26.4614 20.0945 26.071 20.485C25.6805 20.8755 25.0474 20.8755 24.657 
+                    20.485L20 15.828L20 27C20 27.5523 19.5522 28 19 28C18.4477 28 18 27.5523 18 
+                    27L18 15.828Z" fill="white" />
+                    <rect class="arrow-ring" x="1" y="1" width="37" height="37" rx="18.5" stroke="white"
+                        stroke-width="2" />
+                </svg>
+            </a>
         </div>
     </div>
 </section>

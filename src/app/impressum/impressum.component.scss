@@ -1,5 +1,10 @@
 .impressum-container {
-    padding: 180px 80px;
+    padding-top: 180px;
+    display: flex;
+    position: relative;
+    max-width: 1440px;
+    justify-content: center;
+    align-items: center;
     background-color: var(--mainDark);
-    color: var(--mainWhite);
+    overflow-x: clip;
 }

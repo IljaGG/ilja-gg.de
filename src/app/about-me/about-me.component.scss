@@ -29,7 +29,7 @@
     z-index: 2;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1100px) {
     .about-me-content {
         max-width: 100%;
         position: relative;
@@ -45,7 +45,7 @@
     z-index: 1;
 }
 
-@media(max-width:900px) {
+@media(max-width:1100px) {
     .portrait-container {
         max-width: 100%;
     }
@@ -65,7 +65,7 @@
     z-index: 1;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 1100px) {
     .portrait-bg {
         position: absolute;
         width: unset;
@@ -76,7 +76,7 @@
 
 .bg-bow-container {
     position: absolute;
-    top: 62%;
+    top: 76%;
     z-index: 1;
 }
 
@@ -88,47 +88,35 @@
 
 @media(max-width: 1200px) {
     .bg-bow-container {
-        top: 66%;
+        top: 78%;
     }
 }
 
 @media(max-width: 1100px) {
     .bg-bow-container {
-        top: 62%;
+        top: 39%;
     }
 }
 
-@media(max-width: 1000px) {
-    .bg-bow-container {
-        top: 56%;
-    }
-}
-
-@media(max-width: 900px) {
-    .bg-bow-container {
-        top: 37%;
-    }
-}
-
-@media(max-width: 700px) {
-    .bg-bow-container {
-        top: 38%;
-    }
-}
-
-@media(max-width: 500px) {
+@media(max-width: 550px) {
     .bg-bow-container {
         top: 36%;
     }
 }
 
-@media(max-width: 440px) {
+@media(max-width: 490px) {
     .bg-bow-container {
-        top: 27%;
+        top: 33%;
     }
 }
 
-@media(max-width: 430px) {
+@media(max-width: 450px) {
+    .bg-bow-container {
+        top: 29%;
+    }
+}
+
+@media(max-width: 420px) {
     .bg-bow-container {
         top: 26%;
     }
@@ -140,14 +128,8 @@
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 340px) {
     .bg-bow-container {
-        top: 21%;
-    }
-}
-
-@media(max-width: 320px) {
-    .bg-bow-container {
-        top: 18%;
+        top: 20%;
     }
 }

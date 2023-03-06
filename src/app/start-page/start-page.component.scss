@@ -70,7 +70,7 @@
     position: absolute;
     font-size: 23px;
     right: 0;
-    bottom: -5px;
+    bottom: 100px;
     transform: rotate(90deg);
     z-index: 2;
 
@@ -98,7 +98,7 @@
     display: flex;
     position: absolute;
     left: -41px;
-    bottom: -33px;
+    bottom: 0px;
     z-index: 2;
     align-items: center;
 
@@ -144,4 +144,8 @@ span {
 
 button {
     z-index: 2;
+}
+
+.scroll-margin {
+    scroll-margin-top: 80px;
 }

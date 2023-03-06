@@ -94,10 +94,15 @@ input {
     height: 50px;
     min-width: 90%;
     padding-inline: 20px;
+    cursor: pointer;
 
     &::placeholder {
         color: white;
         padding-left: 30px;
+    }
+
+    &:hover {
+        border: 1px solid var(--mainPurple);
     }
 }
 
@@ -113,10 +118,15 @@ textarea {
     font-size: var(--text-size);
     font-weight: 400;
     padding: 20px;
+    cursor: pointer;
 
     &::placeholder {
         color: white;
         padding: 15px 30px;
+    }
+
+    &:hover {
+        border: 1px solid var(--mainPurple);
     }
 }
 

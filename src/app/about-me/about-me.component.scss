@@ -86,6 +86,18 @@
     min-width: 101vw;
 }
 
+@media(min-width: 1800px) {
+    .bg-bow-container {
+        top: 69%;
+    }
+}
+
+@media(min-width: 2300px) {
+    .bg-bow-container {
+        top: 61%;
+    }
+}
+
 @media(max-width: 1200px) {
     .bg-bow-container {
         top: 78%;

@@ -68,6 +68,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         .button-wrapper {
@@ -168,6 +169,22 @@
 
         span {
             font-size: 16px;
+        }
+    }
+}
+
+@media (max-width:345px) {
+    .project-info {
+        h2 {
+            font-size: 21px;
+        }
+
+        p {
+            font-size: 13px;
+        }
+
+        span {
+            font-size: 14px !important;
         }
     }
 }
